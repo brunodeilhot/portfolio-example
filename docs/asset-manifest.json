@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f67346f4.css",
+    "main.js": "/static/js/main.d3a73633.js",
+    "static/media/zacarias.jpg": "/static/media/zacarias.d2910008d6c9ae106d3a.jpg",
+    "static/media/project.jpg": "/static/media/project.d9b18d6ed57222f41b6e.jpg",
+    "static/media/project.png": "/static/media/project.0d0d8ff689849d3d367c.png",
+    "static/media/logo.png": "/static/media/logo.45e46d8bb19276308ea6.png",
+    "index.html": "/index.html",
+    "main.f67346f4.css.map": "/static/css/main.f67346f4.css.map",
+    "main.d3a73633.js.map": "/static/js/main.d3a73633.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f67346f4.css",
+    "static/js/main.d3a73633.js"
+  ]
+}

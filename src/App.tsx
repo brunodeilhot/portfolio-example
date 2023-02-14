@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import { Outlet } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import Header from "./components/Header";
+import SocialBar from "./components/SocialBar";
+import { AppContext } from "./contexts/AppContext";
+import { Container, OutletContainer } from "./styles";
+import { darkTheme, lightTheme } from "./theme";
 
-function App() {
+const App = () => {
+
+  const { darkMode } = useContext(AppContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Container>
+        <Header />
+        <OutletContainer>
+          <SocialBar />
+          <Outlet />
+        </OutletContainer>
+      </Container>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
